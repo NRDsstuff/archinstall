@@ -47,7 +47,7 @@ EOF
 
 # desktop
 arch-chroot /mnt <<EOF
-    yes | pacman -S gnome-logs gnome-menus gnome-session gnome-settings-daemon gnome-shell gnome-software gnome-system-monitor gnome-text-editor evince gdm gnome-calculator gnome-calendar gnome-characters gnome-clocks gnome-control-center gnome-disk-utility gnome-font-viewer gnome-keyring gnome-weather grilo-plugins gvfs gvfs-dnssd gvfs-goa gvfs-google gvfs-gphoto2 gvfs-mtp gvfs-nfs gvfs-onedrive gvfs-smb gvfs-wsdd loupe nautilus snapshot sushi tecla totem xdg-desktop-portal-gnome tracker3-miners xdg-user-dirs-gtk gnome-tweaks noto-fonts-emoji pipewire-jack 
+    yes | pacman -S gnome-logs gnome-menus gnome-session gnome-settings-daemon firefox gnome-shell gnome-software gnome-system-monitor gnome-text-editor evince gdm gnome-calculator gnome-calendar gnome-characters gnome-clocks gnome-control-center gnome-disk-utility gnome-font-viewer gnome-keyring gnome-weather grilo-plugins gvfs gvfs-dnssd gvfs-goa gvfs-google gvfs-gphoto2 gvfs-mtp gvfs-nfs gvfs-onedrive gvfs-smb gvfs-wsdd loupe nautilus snapshot sushi tecla totem xdg-desktop-portal-gnome tracker3-miners xdg-user-dirs-gtk gnome-tweaks noto-fonts-emoji pipewire-jack 
     gsettings set org.gnome.desktop.wm.preferences resize-with-right-button true
     systemctl enable gdm.service
 EOF
